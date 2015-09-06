@@ -1,12 +1,13 @@
 {
   "name": "tingle-on-off",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The `OnOff Component` for tinglejs",
   "repository": "https://github.com/tinglejs/tingle-on-off.git",
   "author": {
     "name": "ruiyang.dry",
     "email": ""
   },
+  "main": "src/index.js",
   "files": [
     "src",
     "README.md"

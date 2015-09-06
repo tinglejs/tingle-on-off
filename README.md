@@ -1,4 +1,4 @@
-# OnOff 开关
+# tingle-on-off
 
 [![npm version](https://badge.fury.io/js/tingle-on-off.svg)](http://badge.fury.io/js/tingle-on-off)
 
