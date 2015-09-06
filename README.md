@@ -23,7 +23,7 @@ npm install tingle-on-off --save
 
 ## Simple Usage
 
-```
+```js
 class Demo extends React.Component {
     constructor(props) {
         super(props);
