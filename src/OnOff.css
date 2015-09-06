@@ -1,0 +1,32 @@
+.tOnOffPannel {
+  border: 1px solid #ccc;
+  height: 36px;
+  width: 66px;
+  border-radius: 22px;
+}
+.tOnOffRadius {
+  height: 34px;
+  width: 34px;
+  border: 1px solid #ccc;
+  border-radius: 22px;
+  position: relative;
+  top: 0px;
+  left: -1px;
+}
+.tOn {
+  background-color: #1cbf61;
+  border: 1px solid #1cbf61;
+  position: relative;
+}
+.tOn .tOnOffRadius {
+  right: 1px;
+  position: absolute;
+  left: inherit;
+  background-color: #fff;
+  border: 1px solid #fff;
+  height: 32px;
+  width: 32px;
+  top: 1px;
+}
+
+/*# sourceMappingURL=OnOff.css.map */
