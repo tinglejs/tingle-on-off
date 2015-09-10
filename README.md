@@ -14,23 +14,28 @@ npm install tingle-on-off --save
 
 ```js
 class Demo extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
-            on1:true,
-            on2:false
+            on1: true,
+            on2: false,
+            on3: false
         }
     }
-    handleChange (form,on){
+
+    handleChange(form, on) {
         this.setState({
-            [form]:on
+            [form]: on
         });
     }
+
     render() {
         return (
             <div>
-                <OnOff on={this.state.on1} onChange={this.handleChange.bind(this,"on1")}/>
-                <OnOff on={this.state.on2} onChange={this.handleChange.bind(this,"on2")}/>
+                <OnOff on={this.state.on1} onChange={this.handleChange.bind(this, "on1")}/>
+                <OnOff on={this.state.on2} onChange={this.handleChange.bind(this, "on2")}/>
+                <OnOff on={this.state.on3} readOnly={true} onChange={this.handleChange.bind(this, "on3")}/>
             </div>
         );
     }
@@ -43,6 +48,7 @@ class Demo extends React.Component {
 |---|----|---|----|
 |className|optional|-|自定义样式类|
 |on|required|-|布尔值，表示当前初始化的时候按钮开或者关的状态|
+|readOnly|optional|false|是否不能修改|
 |onChange|required|-|点击之后的回调函数|
 
 
