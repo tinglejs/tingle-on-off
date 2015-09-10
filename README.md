@@ -1,19 +1,8 @@
-# tingle-on-off
-
-[![npm version](https://badge.fury.io/js/tingle-on-off.svg)](http://badge.fury.io/js/tingle-on-off)
-
-The `OnOff Component` for tinglejs
-
----
-
-## TL;DR
+# tingle-on-off [![npm version](https://badge.fury.io/js/tingle-on-off.svg)](http://badge.fury.io/js/tingle-on-off)
 
 开关控件，类似 iPhone 的开关。
 
-效果图:
-
-![效果图](http://gtms01.alicdn.com/tps/i1/TB1CxGcIVXXXXcuaXXXJmd.UVXX-173-145.jpg)
-
+<img src="https://img.alicdn.com/tps/TB1dJjWJpXXXXazXFXXXXXXXXXX-750-1254.png" width="375"/>
 
 ## Install
 

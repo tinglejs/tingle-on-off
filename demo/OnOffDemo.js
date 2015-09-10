@@ -1,36 +1,38 @@
-
-var OnOff = require('../src');
-
-// TODO: move the line to tingle-env
-React.initializeTouchEvents(true);
+/**
+ * OnOff Component Demo for tingle
+ * @author ruiyang.dry
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+let OnOff = require('../src');
 
 class Demo extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            on1:true,
-            on2:false
+            on1: true,
+            on2: false,
+            on3: false
         }
     }
 
-    handleChange (form,on){
-        console.log(arguments)
-        // debugger;
+    handleChange(form, on) {
         this.setState({
-            [form]:on
+            [form]: on
         });
-
     }
 
     render() {
         return (
             <div>
-                <OnOff on={this.state.on1} onChange={this.handleChange.bind(this,"on1")}/>
-                <OnOff on={this.state.on2} onChange={this.handleChange.bind(this,"on2")}/>
+                <OnOff on={this.state.on1} onChange={this.handleChange.bind(this, "on1")}/>
+                <OnOff on={this.state.on2} onChange={this.handleChange.bind(this, "on2")}/>
+                <OnOff on={this.state.on3} readOnly={true} onChange={this.handleChange.bind(this, "on3")}/>
             </div>
         );
     }
-};
+}
 
 React.render(<Demo/>, document.getElementById('TingleDemo'));

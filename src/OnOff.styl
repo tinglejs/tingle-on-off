@@ -1,29 +1,71 @@
-.tOnOffPannel
-    border 1px solid #ccc
-    height 36px
-    width 66px
-    border-radius 22px
+/**
+ * OnOff Component Style for tingle
+ * @author ruiyang.dry
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+@require "../node_modules/tingle-style/src/var"
+
+.tOnOffPanel
+  display inline-block
+  padding 5px
+  pointer-events auto
+  position relative
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  -webkit-touch-callout none
+  -webkit-user-select none
+  -khtml-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  user-select none
+  cursor pointer
+
+.tOnOffBack
+  -webkit-transition all 0.3s ease-in-out
+  -o-transition all 0.3s ease-in-out
+  transition all 0.3s ease-in-out
+  background-color #ffffff
+  border-radius 20px
+  border solid 2px #e6e6e6
+  box-sizing border-box
+  content ' '
+  cursor pointer
+  display inline-block
+  height 31px
+  pointer-events none
+  width 51px
+  -webkit-background-clip padding-box
+
 .tOnOffRadius
-    height 34px
-    width 34px
-    border 1px solid #ccc
-    border-radius 22px
-    position relative
-    top 0px
-    left -1px
-.tOn
-    background-color #1cbf61
-    border 1px solid #1cbf61
-    position: relative
-.tOn .tOnOffRadius
-    right 1px
-    position absolute
-    left inherit
-    background-color #fff
-    border 1px solid #fff
-    height 32px
-    width 32px
-    top 1px
+  -webkit-transition 0.3s cubic-bezier(0, 1.1, 1, 1.1)
+  -o-transition 0.3s cubic-bezier(0, 1.1, 1, 1.1)
+  transition 0.3s cubic-bezier(0, 1.1, 1, 1.1)
+  background-color white
+  border-radius 27px
+  box-shadow 0 2px 7px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15)
+  display block
+  height 27px
+  left 7px
+  position absolute
+  top 7px
+  width 27px
 
+.tOnOffRadius::before
+  content " "
+  left -21.5px
+  padding 18.5px 34px
+  position absolute
+  top -4px
 
+.tOnOffPanel.tOn .tOnOffBack
+  border-color #4cd964
+  background-color #4cd964
 
+.tOnOffPanel.tOn .tOnOffRadius
+  -webkit-transform translate3d(20px, 0, 0)
+  transform translate3d(20px, 0, 0)
+  background-color white
+
+.tOnOffPanel.readOnly > .tOnOffBack
+  opacity .6
