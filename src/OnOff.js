@@ -23,7 +23,7 @@ class OnOff extends React.Component {
     render() {
         let t = this;
         let classSet = {
-            "tOnOffPanel": true,
+            "tOnOff": true,
             "tOn": t.props.on,
             "readOnly": t.props.readOnly,
             [t.props.className]: !!t.props.className

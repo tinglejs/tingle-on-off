@@ -7,7 +7,7 @@
  */
 @require "../node_modules/tingle-style/src/var"
 
-.tOnOffPanel
+.tOnOff
   display inline-block
   padding 5px
   pointer-events auto
@@ -20,6 +20,7 @@
   -ms-user-select none
   user-select none
   cursor pointer
+  overflow hidden
 
 .tOnOffBack
   -webkit-transition all 0.3s ease-in-out
@@ -58,14 +59,14 @@
   position absolute
   top -4px
 
-.tOnOffPanel.tOn .tOnOffBack
+.tOnOff.tOn .tOnOffBack
   border-color #4cd964
   background-color #4cd964
 
-.tOnOffPanel.tOn .tOnOffRadius
+.tOnOff.tOn .tOnOffRadius
   -webkit-transform translate3d(20px, 0, 0)
   transform translate3d(20px, 0, 0)
   background-color white
 
-.tOnOffPanel.readOnly > .tOnOffBack
+.tOnOff.readOnly > .tOnOffBack
   opacity .6

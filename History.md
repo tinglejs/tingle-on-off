@@ -1,4 +1,10 @@
 
+0.2.1 / 2015-09-12
+==================
+ * change className to `tOnOff`
+ * fix transition overflow style issue
+
+
 0.2.0 / 2015-09-10
 ==================
 
