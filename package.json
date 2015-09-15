@@ -1,7 +1,7 @@
 {
   "name": "tingle-on-off",
   "version": "0.2.1",
-  "description": "The `OnOff Component` for tinglejs",
+  "description": "模拟 iPhone 开关控件",
   "repository": "https://github.com/tinglejs/tingle-on-off.git",
   "author": {
     "name": "ruiyang.dry",
@@ -15,7 +15,9 @@
   "keywords": [
     "tingle-on-off",
     "OnOff",
-    "switch"
+    "switch",
+    "开关",
+    "表单"
   ],
   "dependencies": {
     "classnames": "^2.1.2",
