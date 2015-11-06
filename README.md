@@ -47,7 +47,7 @@ class Demo extends React.Component {
 | 配置项 | 必填 | 默认值 | 功能/备注 |
 |---|----|---|----|
 |className|optional|-|自定义样式类|
-|on|required|-|布尔值，表示当前初始化的时候按钮开或者关的状态|
+|on|required|true|布尔值，表示当前初始化的时候按钮开或者关的状态|
 |readOnly|optional|false|是否不能修改|
 |onChange|required|-|点击之后的回调函数|
 
