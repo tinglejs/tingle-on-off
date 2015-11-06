@@ -17,7 +17,7 @@ class OnOff extends React.Component {
         if (t.props.readOnly) {
             return;
         }
-        t.props.onChange.call(!t.props.on, event)
+        t.props.onChange(!t.props.on, event)
     }
 
     render() {
