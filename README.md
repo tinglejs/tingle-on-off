@@ -1,16 +1,16 @@
 # tingle-on-off [![npm version](https://badge.fury.io/js/tingle-on-off.svg)](http://badge.fury.io/js/tingle-on-off)
 
-开关控件，类似 iPhone 的开关。
+> Radio Component, iPhone style.
 
 <img src="https://img.alicdn.com/tps/TB1dJjWJpXXXXazXFXXXXXXXXXX-750-1254.png" width="375"/>
 
 ## Install
 
-```
+```bash
 npm install tingle-on-off --save
 ```
 
-## Simple Usage
+## Usage
 
 ```js
 class Demo extends React.Component {
@@ -42,17 +42,17 @@ class Demo extends React.Component {
 }
 ```
 
-## Options 可用配置
-
-| 配置项 | 必填 | 默认值 | 功能/备注 |
-|---|----|---|----|
-|className|optional|-|自定义样式类|
-|on|required|true|布尔值，表示当前初始化的时候按钮开或者关的状态|
-|readOnly|optional|false|是否不能修改|
-|onChange|required|-|点击之后的回调函数|
+## Options
 
 
-## Links 相关链接
+- `className`:(default ``) Defines className that you can add to the component.
+- `on`:(default `true`) Defines whether the component should be on.
+- `readOnly`:(default `false`) Defines whether the component is readOnly(can not be modified by user action).
+- `onChange`:(default `function(on,e){}`) Defines callback whenever the component value changed.
+  - `on` The on state after change.
+  - `event` The `SyntheticEvent` object.
 
-- [Fire a bug/Issues 提Bug](https://github.com/tinglejs/tingle-on-off/issues)
-- [Tingle项目](https://github.com/tinglejs/generator-tingle)
+
+## Links
+
+- [Fire a bug/Issues](https://github.com/tinglejs/tingle-on-off/issues)
