@@ -12,12 +12,12 @@ class OnOff extends React.Component {
         super(props);
     }
 
-    handleChange() {
+    handleChange(event) {
         let t = this;
         if (t.props.readOnly) {
             return;
         }
-        t.props.onChange(!t.props.on)
+        t.props.onChange(!t.props.on, event)
     }
 
     render() {
@@ -29,7 +29,10 @@ class OnOff extends React.Component {
             [t.props.className]: !!t.props.className
         };
         return (
-            <div ref="root" className={classnames(classSet)} readOnly={t.props.readOnly} onClick={t.handleChange.bind(this)}>
+            <div
+                className={classnames(classSet)}
+                readOnly={t.props.readOnly}
+                onClick={t.handleChange.bind(this)}>
                 <div className="tOnOffBack">
                     <div className="tOnOffRadius"></div>
                 </div>

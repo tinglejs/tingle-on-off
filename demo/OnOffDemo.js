@@ -18,9 +18,9 @@ class Demo extends React.Component {
         }
     }
 
-    handleChange(form, on) {
+    handleChange(from, on) {
         this.setState({
-            [form]: on
+            [from]: on
         });
     }
 
