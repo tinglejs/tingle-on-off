@@ -1,6 +1,6 @@
 {
   "name": "tingle-on-off",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "模拟 iPhone 开关控件",
   "repository": "https://github.com/tinglejs/tingle-on-off.git",
   "author": {

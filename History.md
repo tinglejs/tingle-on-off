@@ -1,4 +1,10 @@
 
+0.3.0 / 2015-11-09
+==================
+
+ * remove wrap padding
+ * onChange now passing event
+
 0.2.1 / 2015-09-12
 ==================
  * change className to `tOnOff`
